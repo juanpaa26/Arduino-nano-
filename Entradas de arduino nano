@@ -1,0 +1,12 @@
+<!Doctype html>
+<head>
+ <title>Entradas de arduino nano</title> 
+  <p>¿Cuales son las entradas del adruino nano?
+1) Entradas/Salidas Digitales (Pines D2-D13): El Arduino Nano tiene 14 pines digitales, marcados como D2, D3, ..., D13. Estos pines pueden usarse tanto como entradas como salidas digitales. Puedes utilizarlos para leer señales digitales (por ejemplo, de un sensor de detección de movimiento) o para controlar dispositivos digitales (por ejemplo, un LED o un relé).
+2) Entradas Analógicas (Pines A0-A7): El Arduino Nano cuenta con 8 pines analógicos, marcados como A0, A1, ..., A7. Estos pines se utilizan para leer señales analógicas, como las provenientes de sensores de luz, temperatura o potenciómetros.
+3) Alimentación (VCC y GND): Los pines VCC y GND se utilizan para proporcionar energía al Arduino Nano y a los componentes conectados a él. VCC se conecta a la fuente de alimentación positiva (+5V) y GND a la fuente de alimentación negativa (tierra).
+4) Pines de Comunicación Serial (RX y TX): Los pines RX (recepción) y TX (transmisión) se utilizan para la comunicación serial con otros dispositivos, como un ordenador o módulos GPS. Estos pines son cruciales si deseas cargar programas o depurar el Arduino Nano a través de una conexión USB.
+5) Pines de Interfaz I2C (A4 y A5): Los pines A4 y A5 se utilizan para la comunicación I2C, que permite conectar varios dispositivos (sensores, pantallas, etc.) a través del bus I2C.
+6)Pines de Interfaz SPI (11, 12 y 13): Estos pines son utilizados para la comunicación SPI (Interfaz Serial Periférica). Se utilizan comúnmente para conectar dispositivos como pantallas TFT, tarjetas SD y sensores.
+7) Pines PWM: Algunos de los pines digitales (D3, D5, D6, D9, D10, D11) también son pines PWM (Modulación por Ancho de Pulso), lo que permite controlar la intensidad de señales analógicas, como la velocidad de un motor o la luminosidad de un LED.
+8) Pines de Alimentación Externa (Vin): El Arduino Nano también puede ser alimentado externamente a través del pin Vin, que permite suministrar una tensión entre 7V y 12V.</p>
