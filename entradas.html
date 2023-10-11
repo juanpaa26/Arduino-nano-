@@ -20,3 +20,37 @@
 8) Pines de Alimentación Externa (Vin): El Arduino Nano también puede ser alimentado externamente a través del pin Vin, que permite suministrar una tensión entre 7V y 12V.</p>
 
 <p>Es importante recordar que algunos de estos pines tienen funciones específicas, por lo que debes tener en cuenta el uso que deseas darles en tu proyecto y consultar la documentación del Arduino Nano para comprender completamente sus capacidades y limitaciones.</p>
+
+
+<p>Cuales son las salidas de adruino nano ? </p> 
+
+ <p>El Arduino Nano es una pequeña y completa placa basada en el ATmega328P (Arduino Nano 3.x) o el ATmega168 (Arduino Nano 2.x). Ofrece funcionalidades similares al Arduino Uno, pero en un formato más pequeño.
+
+Las salidas y entradas del Arduino Nano son proporcionadas a través de pines que puedes usar en tus proyectos. Aquí te describo los principales pines y sus funciones:
+
+Pines de Alimentación:
+
+VIN: Puedes aplicar una fuente de alimentación externa (7-12V) a este pin.
+3.3V: Salida de 3.3V con un límite de 50 mA.
+5V: Salida de 5V. Este pin puede ser usado para alimentar componentes externos.
+GND: Pines de tierra (tiene varios).
+Pines Analógicos (A0 - A7): Estos pines pueden ser usados para leer señales analógicas mediante el ADC integrado.
+
+Pines Digitales (D0 - D13):
+
+D0/D1 (RX/TX): Usados para comunicación serial.
+D2 - D13: Pines de entrada/salida digitales. Los pines desde D3 hasta D13 soportan salida PWM (ancho de pulso modulado).
+D13: Tiene un LED integrado que suele usarse para pruebas.
+Pines de Comunicación:
+
+A4 (SDA) y A5 (SCL): Para comunicación I2C.
+D10 (SS), D11 (MOSI), D12 (MISO), D13 (SCK): Para comunicación SPI.
+Otros:
+
+RESET: Puede ser usado para reiniciar el microcontrolador manualmente.
+A6 y A7: Entradas analógicas adicionales (no están presentes en otros modelos como el Uno).
+Cada pin de I/O digital puede ser usado como entrada o salida utilizando las funciones pinMode(), digitalRead() y digitalWrite(). También, tienen una resistencia pull-up (desconectada por defecto) que puede ser activada con el software.
+
+Cuando usas estos pines como salidas y los configuras como HIGH, tienen un nivel de aproximadamente 5V y pueden suministrar (o drenar) hasta 40 mA. Sin embargo, es recomendable no exceder los 20 mA para evitar dañar el pin o el microcontrolador.
+
+Por supuesto, como con cualquier plataforma electrónica, es importante revisar las especificaciones técnicas y datasheets pertinentes antes de conectar componentes para asegurarse de que estás operando dentro de los límites seguros del dispositivo.</p>
