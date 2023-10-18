@@ -1,42 +1,72 @@
-<!Doctype html>
-<head> 
- <center><title>Instalacion del software adruino nano</title></center>  
-  <p>Para instalar el software de Arduino (conocido como Arduino IDE) en un PC, sigue los siguientes pasos:
+<!DOCTYPE html>
+<html>
 
-<p>1) Descarga el Arduino IDE:<p>
+<head>
+  <title>Instalación del Software Arduino Nano</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
 
-<p>Ve al sitio web oficial de Arduino en https://www.arduino.cc/.
-En el menú, selecciona "Software" y luego "Downloads".
-Selecciona la versión del Arduino IDE adecuada para tu sistema operativo (Windows, macOS, Linux).
-Instalación para Windows:</p>
+    h1 {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
 
+    .section {
+      width: 70%;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin: 10px auto;
+    }
 
-<p>2) Instalador: Si descargaste el instalador, simplemente haz doble clic en él y sigue las instrucciones.
-ZIP: Si descargaste el archivo ZIP (para una instalación no administrativa), descomprímelo y ejecuta el archivo arduino.exe dentro de la carpeta extraída.
-Instalación para macOS:</p>
+    p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
 
+<body>
+  <h1>Instalación del Software Arduino Nano</h1>
 
-<p>3)Abre el archivo descargado .dmg.
-Arrastra la aplicación Arduino a la carpeta de aplicaciones.
-Instalación para Linux:</p>
+  <div class="section">
+    <h2>Para instalar el software de Arduino (conocido como Arduino IDE) en un PC, sigue los siguientes pasos:</h2>
+    <p>1) Descarga el Arduino IDE:</p>
+    <p>Ve al sitio web oficial de Arduino en https://www.arduino.cc/. En el menú, selecciona "Software" y luego "Downloads". Selecciona la versión del Arduino IDE adecuada para tu sistema operativo (Windows, macOS, Linux).</p>
+  </div>
 
-<p>4)Descomprime el archivo descargado.
-Abre una terminal y navega (cd) hasta el directorio de la carpeta descomprimida.
-Ejecuta el script de instalación con ./install.sh.
-Configuración inicial:</p>
+  <div class="section">
+    <h2>Instalación para Windows:</h2>
+    <p>2) Instalador: Si descargaste el instalador, simplemente haz doble clic en él y sigue las instrucciones. ZIP: Si descargaste el archivo ZIP (para una instalación no administrativa), descomprímelo y ejecuta el archivo arduino.exe dentro de la carpeta extraída.</p>
+  </div>
 
+  <div class="section">
+    <h2>Instalación para macOS:</h2>
+    <p>3) Abre el archivo descargado .dmg. Arrastra la aplicación Arduino a la carpeta de aplicaciones.</p>
+  </div>
 
-<p>5)Una vez instalado, abre el Arduino IDE.
-Conecta tu placa Arduino al PC usando un cable USB.
-En el Arduino IDE, ve a Herramientas > Placa y selecciona el modelo de tu placa Arduino (por ejemplo, Arduino Uno, Nano, Mega, etc.).
-Luego, en Herramientas > Puerto, selecciona el puerto COM en el que está conectado tu Arduino.
-Instalar drivers (si es necesario):</p>
+  <div class="section">
+    <h2>Instalación para Linux:</h2>
+    <p>4) Descomprime el archivo descargado. Abre una terminal y navega (cd) hasta el directorio de la carpeta descomprimida. Ejecuta el script de instalación con ./install.sh.</p>
+  </div>
 
+  <div class="section">
+    <h2>Configuración inicial:</h2>
+    <p>5) Una vez instalado, abre el Arduino IDE. Conecta tu placa Arduino al PC usando un cable USB. En el Arduino IDE, ve a Herramientas > Placa y selecciona el modelo de tu placa Arduino (por ejemplo, Arduino Uno, Nano, Mega, etc.). Luego, en Herramientas > Puerto, selecciona el puerto COM en el que está conectado tu Arduino.</p>
+  </div>
 
-<p>En algunos casos, principalmente con clones de Arduino, es posible que necesites instalar drivers específicos para que tu PC reconozca correctamente la placa. Esto es más común con placas que usan el chip CH340G para la comunicación USB. Si tu placa no es reconocida automáticamente, consulta la documentación de tu placa o busca los drivers adecuados en línea.
-Prueba:</p>
+  <div class="section">
+    <h2>Instalar drivers (si es necesario):</h2>
+    <p>En algunos casos, principalmente con clones de Arduino, es posible que necesites instalar drivers específicos para que tu PC reconozca correctamente la placa. Esto es más común con placas que usan el chip CH340G para la comunicación USB. Si tu placa no es reconocida automáticamente, consulta la documentación de tu placa o busca los drivers adecuados en línea.</p>
+  </div>
 
+  <div class="section">
+    <h2>Prueba:</h2>
+    <p>Para verificar que todo funciona correctamente, intenta cargar el programa "Blink" en tu placa. Ve a Archivo > Ejemplos > 01.Basics > Blink. Haz clic en el botón "Subir" (la flecha derecha en la esquina superior izquierda) para cargar el programa en tu Arduino. Si todo va bien, deberías ver el LED incorporado de tu placa Arduino parpadeando. ¡Eso es todo! Ahora deberías tener el Arduino IDE instalado y listo para usar en tu PC.</p>
+  </div>
+</body>
 
-<p>Para verificar que todo funciona correctamente, intenta cargar el programa "Blink" en tu placa. Ve a Archivo > Ejemplos > 01.Basics > Blink.
-Haz clic en el botón "Subir" (la flecha derecha en la esquina superior izquierda) para cargar el programa en tu Arduino. Si todo va bien, deberías ver el LED incorporado de tu placa Arduino parpadeando.
-¡Eso es todo! Ahora deberías tener el Arduino IDE instalado y listo para usar en tu PC.</p>
+</html>
