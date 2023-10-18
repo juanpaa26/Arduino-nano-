@@ -1,44 +1,126 @@
-<!Doctype html>
-<head> 
-  <center><title>Servicio tecnico adruino nano</title></center> 
-  <p>Error al subir el código al Nano:
+<!DOCTYPE html>
+<html>
 
-1)Solución: Verifica que has seleccionado la placa correcta y el puerto correcto en el Arduino IDE. Si estás usando un Nano con un chip CH340 y el bootloader antiguo, selecciona "ATmega328P (Old Bootloader)" en Herramientas > Procesador.
-No se reconoce el Arduino Nano en la computadora:
+<head>
+  <title>Servicio Técnico Arduino Nano</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
 
-2)Solución:
-Asegúrate de tener instalados los drivers correctos, especialmente si usas un Nano con un chip CH340/CH341.
-Cambia el cable USB, ya que algunos cables pueden estar dañados o ser solo de carga y no de datos.
-Prueba conectando el Nano en un puerto USB diferente.
-Sobrecalentamiento o reinicios:
+    h1 {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px;
+    }
 
-3)Solución: Estos problemas pueden deberse a una alimentación inadecuada o a cortocircuitos. Revisa tus conexiones y asegúrate de no estar alimentando el Nano con un voltaje superior al recomendado. Además, verifica que no hay cortocircuitos en tu protoboard o placa.
-Errores de compilación:
+    h2 {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
 
-4)Solución: Verifica que el código no tenga errores y que estés usando las librerías adecuadas. Asegúrate de tener actualizado el Arduino IDE y las bibliotecas que estés usando.
-Componentes externos no funcionan como se esperaba:
+    .section {
+      margin: 20px 0;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
 
-5)Solución:
-Comprueba las conexiones.
-Asegúrate de que estés alimentando los componentes con el voltaje correcto.
-Verifica que estás utilizando los pines adecuados en tu código.
-Lecturas analógicas inestables:
+    p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
 
-6)Solución:
-Añade un condensador entre el pin de entrada analógica y GND para estabilizar las lecturas.
-Asegúrate de tener una tierra común si estás usando múltiples fuentes de alimentación.
-Error de memoria insuficiente:
+<body>
+  <h1>Servicio Técnico Arduino Nano</h1>
 
-7)Solución: Optimiza tu código eliminando variables, funciones o librerías innecesarias. Considera usar el tipo de datos "progmem" para almacenar constantes en la memoria flash en lugar de la RAM.
-Errores de comunicación serial:
+  <div class="section">
+    <h2>Error al subir el código al Nano:</h2>
+    <p>
+      1) Solución: Verifica que has seleccionado la placa correcta y el puerto correcto en el Arduino IDE. Si estás usando un Nano con un chip CH340 y el bootloader antiguo, selecciona "ATmega328P (Old Bootloader)" en Herramientas &gt; Procesador.
+    </p>
+  </div>
 
-8)Solución:
-Asegúrate de que la velocidad (baud rate) en el Arduino y en el dispositivo con el que te estás comunicando sean las mismas.
-Si estás utilizando SoftwareSerial, prueba cambiando a otros pines o asegúrate de que no haya interferencias con otras funciones o interrupciones.
-El Arduino Nano se comporta de manera errática después de una actualización del firmware:
+  <div class="section">
+    <h2>No se reconoce el Arduino Nano en la computadora:</h2>
+    <p>
+      2) Solución:
+      Asegúrate de tener instalados los drivers correctos, especialmente si usas un Nano con un chip CH340/CH341.
+      Cambia el cable USB, ya que algunos cables pueden estar dañados o ser solo de carga y no de datos.
+      Prueba conectando el Nano en un puerto USB diferente.
+    </p>
+  </div>
 
-9)Solución: Es posible que necesites "quemar" el bootloader nuevamente. Puedes hacer esto con otro Arduino usando la función "Arduino as ISP" o con un programador externo.
-Fallos de conexión con módulos o sensores:
+  <div class="section">
+    <h2>Sobrecalentamiento o reinicios:</h2>
+    <p>
+      3) Solución: Estos problemas pueden deberse a una alimentación inadecuada o a cortocircuitos. Revisa tus conexiones y asegúrate de no estar alimentando el Nano con un voltaje superior al recomendado. Además, verifica que no hay cortocircuitos en tu protoboard o placa.
+    </p>
+  </div>
 
-10)Solución: A menudo, estos problemas se deben a conexiones flojas o inadecuadas. Asegúrate de que todas las conexiones estén firmemente conectadas y que estés usando resistencias pull-up o pull-down cuando sea necesario.
-Estas son solo algunas soluciones generales a problemas comunes. Siempre es una buena idea consultar foros, grupos de discusión o la documentación oficial de Arduino si te encuentras con un problema específico.</p>
+  <div class="section">
+    <h2>Errores de compilación:</h2>
+    <p>
+      4) Solución: Verifica que el código no tenga errores y que estés usando las librerías adecuadas. Asegúrate de tener actualizado el Arduino IDE y las bibliotecas que estés usando.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Componentes externos no funcionan como se esperaba:</h2>
+    <p>
+      5) Solución:
+      Comprueba las conexiones.
+      Asegúrate de que estás alimentando los componentes con el voltaje correcto.
+      Verifica que estás utilizando los pines adecuados en tu código.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Lecturas analógicas inestables:</h2>
+    <p>
+      6) Solución:
+      Añade un condensador entre el pin de entrada analógica y GND para estabilizar las lecturas.
+      Asegúrate de tener una tierra común si estás usando múltiples fuentes de alimentación.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Error de memoria insuficiente:</h2>
+    <p>
+      7) Solución: Optimiza tu código eliminando variables, funciones o librerías innecesarias. Considera usar el tipo de datos "progmem" para almacenar constantes en la memoria flash en lugar de la RAM.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Errores de comunicación serial:</h2>
+    <p>
+      8) Solución:
+      Asegúrate de que la velocidad (baud rate) en el Arduino y en el dispositivo con el que te estás comunicando sean las mismas.
+      Si estás utilizando SoftwareSerial, prueba cambiando a otros pines o asegúrate de que no haya interferencias con otras funciones o interrupciones.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>El Arduino Nano se comporta de manera errática después de una actualización del firmware:</h2>
+    <p>
+      9) Solución: Es posible que necesites "quemar" el bootloader nuevamente. Puedes hacer esto con otro Arduino usando la función "Arduino as ISP" o con un programador externo.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Fallos de conexión con módulos o sensores:</h2>
+    <p>
+      10) Solución: A menudo, estos problemas se deben a conexiones flojas o inadecuadas. Asegúrate de que todas las conexiones estén firmemente conectadas y que estés usando resistencias pull-up o pull-down cuando sea necesario.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Nota:</h2>
+    <p>Estas son solo algunas soluciones generales a problemas comunes. Siempre es una buena idea consultar foros, grupos de discusión o la documentación oficial de Arduino si te encuentras con un problema específico.</p>
+  </div>
+
+</body>
+
+</html>
