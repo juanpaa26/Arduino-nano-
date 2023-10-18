@@ -1,56 +1,131 @@
-<!Doctype html>
+<!DOCTYPE html>
+<html>
 <head>
- <center><title>Entradas de arduino nano</title></center> 
-  <p>¿Cuales son las entradas del adruino nano?
+  <title>Entradas y Salidas de Arduino Nano</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
 
-1) Entradas/Salidas Digitales (Pines D2-D13): El Arduino Nano tiene 14 pines digitales, marcados como D2, D3, ..., D13. Estos pines pueden usarse tanto como entradas como salidas digitales. Puedes utilizarlos para leer señales digitales (por ejemplo, de un sensor de detección de movimiento) o para controlar dispositivos digitales (por ejemplo, un LED o un relé).
+    h1 {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
 
-2) Entradas Analógicas (Pines A0-A7): El Arduino Nano cuenta con 8 pines analógicos, marcados como A0, A1, ..., A7. Estos pines se utilizan para leer señales analógicas, como las provenientes de sensores de luz, temperatura o potenciómetros.
+    .section {
+      width: 70%;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin: 10px auto;
+    }
 
-3) Alimentación (VCC y GND): Los pines VCC y GND se utilizan para proporcionar energía al Arduino Nano y a los componentes conectados a él. VCC se conecta a la fuente de alimentación positiva (+5V) y GND a la fuente de alimentación negativa (tierra).
+    p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Entradas y Salidas de Arduino Nano</h1>
 
-4) Pines de Comunicación Serial (RX y TX): Los pines RX (recepción) y TX (transmisión) se utilizan para la comunicación serial con otros dispositivos, como un ordenador o módulos GPS. Estos pines son cruciales si deseas cargar programas o depurar el Arduino Nano a través de una conexión USB.
+  <div class="section">
+    <h2>¿Cuáles son las entradas del Arduino Nano?</h2>
+    <p>
+      1) Entradas/Salidas Digitales (Pines D2-D13): El Arduino Nano tiene 14 pines digitales, marcados como D2, D3, ..., D13. Estos pines pueden usarse tanto como entradas como salidas digitales. Puedes utilizarlos para leer señales digitales (por ejemplo, de un sensor de detección de movimiento) o para controlar dispositivos digitales (por ejemplo, un LED o un relé).
+    </p>
+    <p>
+      2) Entradas Analógicas (Pines A0-A7): El Arduino Nano cuenta con 8 pines analógicos, marcados como A0, A1, ..., A7. Estos pines se utilizan para leer señales analógicas, como las provenientes de sensores de luz, temperatura o potenciómetros.
+    </p>
+    <p>
+      3) Alimentación (VCC y GND): Los pines VCC y GND se utilizan para proporcionar energía al Arduino Nano y a los componentes conectados a él. VCC se conecta a la fuente de alimentación positiva (+5V) y GND a la fuente de alimentación negativa (tierra).
+    </p>
+    <p>
+      4) Pines de Comunicación Serial (RX y TX): Los pines RX (recepción) y TX (transmisión) se utilizan para la comunicación serial con otros dispositivos, como un ordenador o módulos GPS. Estos pines son cruciales si deseas cargar programas o depurar el Arduino Nano a través de una conexión USB.
+    </p>
+    <p>
+      5) Pines de Interfaz I2C (A4 y A5): Los pines A4 y A5 se utilizan para la comunicación I2C, que permite conectar varios dispositivos (sensores, pantallas, etc.) a través del bus I2C.
+    </p>
+    <p>
+      6) Pines de Interfaz SPI (11, 12 y 13): Estos pines son utilizados para la comunicación SPI (Interfaz Serial Periférica). Se utilizan comúnmente para conectar dispositivos como pantallas TFT, tarjetas SD y sensores.
+    </p>
+    <p>
+      7) Pines PWM: Algunos de los pines digitales (D3, D5, D6, D9, D10, D11) también son pines PWM (Modulación por Ancho de Pulso), lo que permite controlar la intensidad de señales analógicas, como la velocidad de un motor o la luminosidad de un LED.
+    </p>
+    <p>
+      8) Pines de Alimentación Externa (Vin): El Arduino Nano también puede ser alimentado externamente a través del pin Vin, que permite suministrar una tensión entre 7V y 12V.
+    </p>
+    <p>
+      Es importante recordar que algunos de estos pines tienen funciones específicas, por lo que debes tener en cuenta el uso que deseas darles en tu proyecto y consultar la documentación del Arduino Nano para comprender completamente sus capacidades y limitaciones.
+    </p>
+  </div>
 
-5) Pines de Interfaz I2C (A4 y A5): Los pines A4 y A5 se utilizan para la comunicación I2C, que permite conectar varios dispositivos (sensores, pantallas, etc.) a través del bus I2C.
-
-6)Pines de Interfaz SPI (11, 12 y 13): Estos pines son utilizados para la comunicación SPI (Interfaz Serial Periférica). Se utilizan comúnmente para conectar dispositivos como pantallas TFT, tarjetas SD y sensores.
-
-7) Pines PWM: Algunos de los pines digitales (D3, D5, D6, D9, D10, D11) también son pines PWM (Modulación por Ancho de Pulso), lo que permite controlar la intensidad de señales analógicas, como la velocidad de un motor o la luminosidad de un LED.
-
-8) Pines de Alimentación Externa (Vin): El Arduino Nano también puede ser alimentado externamente a través del pin Vin, que permite suministrar una tensión entre 7V y 12V.</p>
-
-<p>Es importante recordar que algunos de estos pines tienen funciones específicas, por lo que debes tener en cuenta el uso que deseas darles en tu proyecto y consultar la documentación del Arduino Nano para comprender completamente sus capacidades y limitaciones.</p>
-
-
-<center><title>Salidas de adruino nano</title></center> 
-
- <p>El Arduino Nano es una pequeña y completa placa basada en el ATmega328P (Arduino Nano 3.x) o el ATmega168 (Arduino Nano 2.x). Ofrece funcionalidades similares al Arduino Uno, pero en un formato más pequeño.
-
-Las salidas y entradas del Arduino Nano son proporcionadas a través de pines que puedes usar en tus proyectos. Aquí te describo los principales pines y sus funciones:
-
-Pines de Alimentación:
-
-VIN: Puedes aplicar una fuente de alimentación externa (7-12V) a este pin.
-3.3V: Salida de 3.3V con un límite de 50 mA.
-5V: Salida de 5V. Este pin puede ser usado para alimentar componentes externos.
-GND: Pines de tierra (tiene varios).
-Pines Analógicos (A0 - A7): Estos pines pueden ser usados para leer señales analógicas mediante el ADC integrado.
-
-Pines Digitales (D0 - D13):
-
-D0/D1 (RX/TX): Usados para comunicación serial.
-D2 - D13: Pines de entrada/salida digitales. Los pines desde D3 hasta D13 soportan salida PWM (ancho de pulso modulado).
-D13: Tiene un LED integrado que suele usarse para pruebas.
-Pines de Comunicación:
-
-A4 (SDA) y A5 (SCL): Para comunicación I2C.
-D10 (SS), D11 (MOSI), D12 (MISO), D13 (SCK): Para comunicación SPI.
-Otros:
-
-RESET: Puede ser usado para reiniciar el microcontrolador manualmente.
-A6 y A7: Entradas analógicas adicionales (no están presentes en otros modelos como el Uno).
-Cada pin de I/O digital puede ser usado como entrada o salida utilizando las funciones pinMode(), digitalRead() y digitalWrite(). También, tienen una resistencia pull-up (desconectada por defecto) que puede ser activada con el software.
-
-Cuando usas estos pines como salidas y los configuras como HIGH, tienen un nivel de aproximadamente 5V y pueden suministrar (o drenar) hasta 40 mA. Sin embargo, es recomendable no exceder los 20 mA para evitar dañar el pin o el microcontrolador.
-
-Por supuesto, como con cualquier plataforma electrónica, es importante revisar las especificaciones técnicas y datasheets pertinentes antes de conectar componentes para asegurarse de que estás operando dentro de los límites seguros del dispositivo.</p>
+  <div class="section">
+    <h2>Salidas de Arduino Nano</h2>
+    <p>
+      El Arduino Nano es una pequeña y completa placa basada en el ATmega328P (Arduino Nano 3.x) o el ATmega168 (Arduino Nano 2.x). Ofrece funcionalidades similares al Arduino Uno, pero en un formato más pequeño.
+    </p>
+    <p>
+      Las salidas y entradas del Arduino Nano son proporcionadas a través de pines que puedes usar en tus proyectos. Aquí te describo los principales pines y sus funciones:
+    </p>
+    <p>
+      Pines de Alimentación:
+    </p>
+    <p>
+      VIN: Puedes aplicar una fuente de alimentación externa (7-12V) a este pin.
+    </p>
+    <p>
+      3.3V: Salida de 3.3V con un límite de 50 mA.
+    </p>
+    <p>
+      5V: Salida de 5V. Este pin puede ser usado para alimentar componentes externos.
+    </p>
+    <p>
+      GND: Pines de tierra (tiene varios).
+    </p>
+    <p>
+      Pines Analógicos (A0 - A7): Estos pines pueden ser usados para leer señales analógicas mediante el ADC integrado.
+    </p>
+    <p>
+      Pines Digitales (D0 - D13):
+    </p>
+    <p>
+      D0/D1 (RX/TX): Usados para comunicación serial.
+    </p>
+    <p>
+      D2 - D13: Pines de entrada/salida digitales. Los pines desde D3 hasta D13 soportan salida PWM (ancho de pulso modulado).
+    </p>
+    <p>
+      D13: Tiene un LED integrado que suele usarse para pruebas.
+    </p>
+    <p>
+      Pines de Comunicación:
+    </p>
+    <p>
+      A4 (SDA) y A5 (SCL): Para comunicación I2C.
+    </p>
+    <p>
+      D10 (SS), D11 (MOSI), D12 (MISO), D13 (SCK): Para comunicación SPI.
+    </p>
+    <p>
+      Otros:
+    </p>
+    <p>
+      RESET: Puede ser usado para reiniciar el microcontrolador manualmente.
+    </p>
+    <p>
+      A6 y A7: Entradas analógicas adicionales (no están presentes en otros modelos como el Uno).
+    </p>
+    <p>
+      Cada pin de I/O digital puede ser usado como entrada o salida utilizando las funciones pinMode(), digitalRead() y digitalWrite(). También, tienen una resistencia pull-up (desconectada por defecto) que puede ser activada con el software.
+    </p>
+    <p>
+      Cuando usas estos pines como salidas y los configuras como HIGH, tienen un nivel de aproximadamente 5V y pueden suministrar (o drenar) hasta 40 mA. Sin embargo, es recomendable no exceder los 20 mA para evitar dañar el pin o el microcontrolador.
+    </p>
+    <p>
+      Por supuesto, como con cualquier plataforma electrónica, es importante revisar las especificaciones técnicas y datasheets pertinentes antes de conectar componentes para asegurarse de que estás operando dentro de los límites seguros del dispositivo.
+    </p>
+  </div>
+</body>
+</html>
